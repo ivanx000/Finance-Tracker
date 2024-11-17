@@ -1,0 +1,92 @@
+/* General Page Styling */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align box higher on the page */
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Adjust box position */
+.auth-box {
+    background: #f9f9f9; /* Light gray background for the box */
+    border-radius: 12px;
+    padding: 40px 30px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 10vh; /* Position higher on the screen */
+}
+
+/* Title and Subtitle */
+.auth-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.auth-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* Buttons Container */
+.auth-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Button Styling */
+.custom-button {
+    flex: 1;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Sign Up Button */
+.custom-button.sign-up {
+    background: #007bff; /* Blue for Sign Up */
+    color: #fff;
+    box-shadow: 0px 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.custom-button.sign-up:hover {
+    background: #0056d2;
+    box-shadow: 0px 6px 20px rgba(0, 86, 210, 0.5);
+}
+
+/* Sign In Button */
+.custom-button.sign-in {
+    background: #28a745; /* Green for Sign In */
+    color: #fff;
+    box-shadow: 0px 4px 15px rgba(40, 167, 69, 0.3);
+}
+
+.custom-button.sign-in:hover {
+    background: #1e7e34;
+    box-shadow: 0px 6px 20px rgba(30, 126, 52, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .auth-box {
+        padding: 30px 20px;
+    }
+
+    .custom-button {
+        font-size: 0.9rem;
+    }
+}
